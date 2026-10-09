@@ -282,7 +282,7 @@ MonoBehaviour:
   decelerationRate: 30
   dragCoefficient: 0.75
   groundSnapDistance: 0.5
-  jumpForce: 5
+  jumpForce: 7
   canMoveInAir: 0
   lookSensitivity: 0.4
   maxVerticalAngle: 80
