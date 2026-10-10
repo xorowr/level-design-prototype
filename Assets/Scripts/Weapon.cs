@@ -28,11 +28,12 @@ public class Weapon : MonoBehaviour
     {
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
+            AmmoAmount -= 1;
             RaycastHit hit;
             if (Physics.Raycast(WeaponCamera.transform.position, WeaponCamera.transform.forward, out hit))
             {
                 Health hitHealth = hit.transform.parent.GetComponent<Health>();
-                if (hitHealth != null)
+                if (hitHealth != null && AmmoAmount > 0)
                 {
                     hitHealth.Damage(20);
                 }
