@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4179384216964574369}
   - component: {fileID: 6301796095536124756}
   - component: {fileID: 2475469053511264307}
-  - component: {fileID: 7445432357172139909}
   - component: {fileID: 8634468386129372806}
   m_Layer: 0
   m_Name: Weapon
@@ -31,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5158671184795964977}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.51581323, y: -0.4951045, z: -0.48414358, w: 0.5043939}
+  m_LocalRotation: {x: 0.5158186, y: -0.4951019, z: -0.48414177, w: 0.5043928}
   m_LocalPosition: {x: -0.44, y: 1.25, z: 1.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -568,7 +567,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2743
+  m_VersionIndex: 2767
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -679,20 +678,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &7445432357172139909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5158671184795964977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e00e742fd3f97ac4eab6ac947c6ce8d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Ammo
-  AmmoAmount: 15
-  AmmoPrefab: {fileID: 0}
 --- !u!114 &8634468386129372806
 MonoBehaviour:
   m_ObjectHideFlags: 0

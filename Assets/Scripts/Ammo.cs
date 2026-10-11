@@ -1,9 +1,12 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
+using static UnityEngine.GraphicsBuffer;
 
 public class Ammo : MonoBehaviour
 {
-    [SerializeField] private float AmmoAmount = 15;
 
+    public GameObject changeAmmo;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,20 +20,16 @@ public class Ammo : MonoBehaviour
         
     }
 
-    public void TakeAmmo(float amount)
+    private void OnTriggerEnter(Collider other)
     {
-        if (AmmoAmount > 0)
+
+        if (other.CompareTag("Player"))
         {
-            AmmoAmount -= amount;
-        }
-        else
-        {
-            Debug.Log("No ammo");
+            changeAmmo.GetComponent<Weapon>().AmmoAmount += 10;
+            Destroy(gameObject);
+
         }
     }
 
-    public void GainAmmo(float amount)
-    {
-        AmmoAmount += amount;
-    }
+
 }

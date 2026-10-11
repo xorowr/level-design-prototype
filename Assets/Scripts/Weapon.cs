@@ -28,8 +28,7 @@ public class Weapon : MonoBehaviour
     {
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            AmmoAmount -= 1;
-
+            AmmoChange();
             RaycastHit hit;
             if (Physics.Raycast(WeaponCamera.transform.position, WeaponCamera.transform.forward, out hit))
             {
@@ -43,5 +42,15 @@ public class Weapon : MonoBehaviour
 
         }
     }
+
+    private void AmmoChange()
+    {
+        if (AmmoAmount > 0)
+        {
+            AmmoAmount -= 1;
+        }
+
+    }
+
 
 }
