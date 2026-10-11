@@ -9,13 +9,13 @@ public class Weapon : MonoBehaviour
     [SerializeField] public int GunDamage = 15;
     [SerializeField] public int AmmoAmount = 15;
     private Camera WeaponCamera;
-    public GameObject target;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         WeaponCamera = Camera.main;
+
     }
 
     // Update is called once per frame
@@ -29,6 +29,7 @@ public class Weapon : MonoBehaviour
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             AmmoAmount -= 1;
+
             RaycastHit hit;
             if (Physics.Raycast(WeaponCamera.transform.position, WeaponCamera.transform.forward, out hit))
             {
@@ -39,6 +40,7 @@ public class Weapon : MonoBehaviour
                 }
 
             }
+
         }
     }
 
