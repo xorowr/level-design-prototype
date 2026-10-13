@@ -28,6 +28,7 @@ public class WeaponHandler : MonoBehaviour
         weapon.transform.position = WeaponAnchor.position;
         weapon.transform.rotation = WeaponAnchor.rotation;
         weapon.WeaponCamera = MainCam;
+
     }
 
 }
