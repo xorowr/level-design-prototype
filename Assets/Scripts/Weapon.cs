@@ -8,7 +8,7 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField] public int GunDamage = 15;
     [SerializeField] public int AmmoAmount = 15;
-    private Camera WeaponCamera;
+    public Camera WeaponCamera;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,7 +24,7 @@ public class Weapon : MonoBehaviour
         Shoot();
     }
 
-    private void Shoot()
+    public void Shoot()
     {
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
