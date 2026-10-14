@@ -693,3 +693,4 @@ MonoBehaviour:
   GunDamage: 15
   AmmoAmount: 15
   WeaponCamera: {fileID: 0}
+  UIText: {fileID: 0}

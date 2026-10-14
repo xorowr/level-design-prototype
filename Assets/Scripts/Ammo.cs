@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -6,7 +7,7 @@ using static UnityEngine.GraphicsBuffer;
 public class Ammo : MonoBehaviour
 {
 
-
+    public TextMeshProUGUI UIText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

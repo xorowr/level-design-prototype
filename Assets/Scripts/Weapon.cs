@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -9,7 +10,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] public int GunDamage = 15;
     [SerializeField] public int AmmoAmount = 15;
     public Camera WeaponCamera;
-
+    public TextMeshProUGUI UIText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
