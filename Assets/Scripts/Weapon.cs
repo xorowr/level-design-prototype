@@ -11,6 +11,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] public int AmmoAmount = 15;
     public Camera WeaponCamera;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -51,6 +52,8 @@ public class Weapon : MonoBehaviour
         }
 
     }
+
+
 
 
 }
