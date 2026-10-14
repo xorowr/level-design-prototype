@@ -7,7 +7,6 @@ using static UnityEngine.GraphicsBuffer;
 public class Ammo : MonoBehaviour
 {
 
-    public TextMeshProUGUI UIText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,7 +24,6 @@ public class Ammo : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-                //changeAmmo.GetComponent<Weapon>().AmmoAmount += 10;
                 Weapon liveWeaponClone = other.GetComponentInChildren<Weapon>();
                 if (liveWeaponClone != null)
                 {

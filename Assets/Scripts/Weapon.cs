@@ -10,7 +10,6 @@ public class Weapon : MonoBehaviour
     [SerializeField] public int GunDamage = 15;
     [SerializeField] public int AmmoAmount = 15;
     public Camera WeaponCamera;
-    public TextMeshProUGUI UIText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -49,7 +48,6 @@ public class Weapon : MonoBehaviour
         if (AmmoAmount > 0)
         {
             AmmoAmount -= 1;
-            UIText.text = "Ammo: " + AmmoAmount.ToString();
         }
 
     }
