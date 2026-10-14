@@ -48856,6 +48856,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ammo (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4536989711957380039, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
+      propertyPath: UIText
+      value: 
+      objectReference: {fileID: 1123753155}
     - target: {fileID: 5408935370196565127, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -64553,6 +64557,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ammo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4536989711957380039, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
+      propertyPath: UIText
+      value: 
+      objectReference: {fileID: 1123753155}
     - target: {fileID: 5408935370196565127, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -73352,6 +73360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ammo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4536989711957380039, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
+      propertyPath: UIText
+      value: 
+      objectReference: {fileID: 1123753155}
     - target: {fileID: 5408935370196565127, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -114751,7 +114763,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123753153}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -152273,6 +152285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ammo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4536989711957380039, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
+      propertyPath: UIText
+      value: 
+      objectReference: {fileID: 1123753155}
     - target: {fileID: 5408935370196565127, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -154337,6 +154353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ammo
       objectReference: {fileID: 0}
+    - target: {fileID: 4536989711957380039, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
+      propertyPath: UIText
+      value: 
+      objectReference: {fileID: 1123753155}
     - target: {fileID: 4536989711957380039, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: changeAmmo
       value: 
