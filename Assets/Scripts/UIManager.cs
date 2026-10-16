@@ -1,28 +1,31 @@
 using TMPro;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-
-    public TextMeshProUGUI UIText;
+    public GameObject healthLocation;
+    public Text HealthText;
+    public float HealthDisplay;
+    private Health currentHealth;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        currentHealth = healthLocation.GetComponent<Health>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-
-    public void UpdateUI()
-    {
-        Weapon targetAmmo = UIText.GetComponent<Weapon>();
-        UIText.text = "Ammo: " + targetAmmo.AmmoAmount.ToString();
+        if (healthLocation != null)
+        {
+            HealthDisplay = currentHealth.health;
+            HealthText.text = "Health: " + (HealthDisplay);
+        }
 
     }
+
+
+
 }

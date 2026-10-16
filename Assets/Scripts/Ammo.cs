@@ -6,7 +6,6 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Ammo : MonoBehaviour
 {
-    private GameObject target;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
