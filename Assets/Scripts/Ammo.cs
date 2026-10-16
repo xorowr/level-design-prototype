@@ -7,6 +7,8 @@ using static UnityEngine.GraphicsBuffer;
 public class Ammo : MonoBehaviour
 {
 
+    public GameObject WeaponHandler;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,11 +26,11 @@ public class Ammo : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-                Weapon liveWeaponClone = other.GetComponentInChildren<Weapon>();
-                if (liveWeaponClone != null)
+            WeaponHandler ammoUpdate = WeaponHandler.GetComponent<WeaponHandler>();
+            if (ammoUpdate != null)
                 {
-                    liveWeaponClone.AmmoAmount += 10;
-                    Destroy(gameObject);
+                ammoUpdate.AmmoAmount += 10;
+                Destroy(gameObject);
                 }
 
         }

@@ -48880,10 +48880,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -49118,6 +49118,10 @@ PrefabInstance:
       propertyPath: UIText
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4536989711957380039, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
+      propertyPath: WeaponHandler
+      value: 
+      objectReference: {fileID: 1254906049}
     - target: {fileID: 5408935370196565127, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -49168,7 +49172,7 @@ PrefabInstance:
       objectReference: {fileID: 1538873405}
     - target: {fileID: 8753472739814932200, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_VersionIndex
-      value: 1020
+      value: 1023
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -65684,6 +65688,10 @@ PrefabInstance:
       propertyPath: UIText
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4536989711957380039, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
+      propertyPath: WeaponHandler
+      value: 
+      objectReference: {fileID: 1254906049}
     - target: {fileID: 5408935370196565127, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -65734,7 +65742,7 @@ PrefabInstance:
       objectReference: {fileID: 1784823535}
     - target: {fileID: 8753472739814932200, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_VersionIndex
-      value: 1020
+      value: 1023
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -74491,6 +74499,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4536989711957380039, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
+      propertyPath: WeaponHandler
+      value: 
+      objectReference: {fileID: 1254906049}
     - target: {fileID: 5408935370196565127, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -74541,7 +74553,7 @@ PrefabInstance:
       objectReference: {fileID: 1238255465}
     - target: {fileID: 8753472739814932200, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_VersionIndex
-      value: 1020
+      value: 1023
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -118695,6 +118707,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponHandler
   WeaponAnchor: {fileID: 693453784}
   MainCam: {fileID: 1808193706}
+  AmmoAmount: 15
+  weaponHandler: {fileID: 1254906049}
 --- !u!1001 &1262665919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -122970,7 +122984,7 @@ PrefabInstance:
       objectReference: {fileID: 163557877}
     - target: {fileID: 8753472739814932200, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_VersionIndex
-      value: 1023
+      value: 1026
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -126185,7 +126199,7 @@ PrefabInstance:
       objectReference: {fileID: 1572035264}
     - target: {fileID: 8753472739814932200, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_VersionIndex
-      value: 1023
+      value: 1026
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -152626,15 +152640,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058026469}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3.5}
-  m_LocalScale: {x: 1.4166185, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.4}
+  m_LocalScale: {x: 1.4508, y: 1.4508, z: 1.4508}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2138744211}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -276.2, y: 124.4}
+  m_AnchoredPosition: {x: -276.2, y: 125.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2058026471
@@ -152659,10 +152673,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -153657,6 +153671,10 @@ PrefabInstance:
       propertyPath: UIText
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4536989711957380039, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
+      propertyPath: WeaponHandler
+      value: 
+      objectReference: {fileID: 1254906049}
     - target: {fileID: 5408935370196565127, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -153707,7 +153725,7 @@ PrefabInstance:
       objectReference: {fileID: 1061998957}
     - target: {fileID: 8753472739814932200, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_VersionIndex
-      value: 1020
+      value: 1023
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -154980,9 +154998,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26cd9722ed341f04598b0fe2d0a7ea23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
-  healthLocation: {fileID: 1254906049}
+  playerInfo: {fileID: 1254906049}
   HealthText: {fileID: 193262927}
   HealthDisplay: 0
+  AmmoText: {fileID: 2058026471}
+  AmmoDisplay: 0
 --- !u!43 &2139577790
 Mesh:
   m_ObjectHideFlags: 0
@@ -155749,6 +155769,10 @@ PrefabInstance:
       propertyPath: changeAmmo
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4536989711957380039, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
+      propertyPath: WeaponHandler
+      value: 
+      objectReference: {fileID: 1254906049}
     - target: {fileID: 5408935370196565127, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -155799,7 +155823,7 @@ PrefabInstance:
       objectReference: {fileID: 1831325745}
     - target: {fileID: 8753472739814932200, guid: dea534fb81f03d14990c1d36b8db5555, type: 3}
       propertyPath: m_VersionIndex
-      value: 1026
+      value: 1029
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

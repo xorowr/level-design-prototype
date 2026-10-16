@@ -6,7 +6,8 @@ public class WeaponHandler : MonoBehaviour
     public Camera MainCam;
 
     private Weapon EquippedWeapon;
-
+    public int AmmoAmount = 15;
+    public GameObject weaponHandler;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,7 +29,9 @@ public class WeaponHandler : MonoBehaviour
         weapon.transform.position = WeaponAnchor.position;
         weapon.transform.rotation = WeaponAnchor.rotation;
         weapon.WeaponCamera = MainCam;
-
+        weapon.WeaponHandler = weaponHandler;
     }
+
+
 
 }

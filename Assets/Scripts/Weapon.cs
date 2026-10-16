@@ -8,9 +8,9 @@ using static UnityEngine.GraphicsBuffer;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] public int GunDamage = 15;
-    [SerializeField] public int AmmoAmount = 15;
     public Camera WeaponCamera;
 
+    public GameObject WeaponHandler;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,19 +22,26 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Shoot();
+        WeaponHandler ammoUpdate = WeaponHandler.GetComponent<WeaponHandler>();
+        if (ammoUpdate.AmmoAmount > 0)
+        {
+         
+            Shoot();
+
+        }
     }
 
     public void Shoot()
     {
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            AmmoChange();
+            WeaponHandler ammoUpdate = WeaponHandler.GetComponent<WeaponHandler>();
+            ammoUpdate.AmmoAmount -= 1;
             RaycastHit hit;
             if (Physics.Raycast(WeaponCamera.transform.position, WeaponCamera.transform.forward, out hit))
             {
                 Health hitHealth = hit.transform.parent.GetComponent<Health>();
-                if (hitHealth != null && AmmoAmount > 0)
+                if (hitHealth != null)
                 {
                     hitHealth.Damage(20);
                 }
@@ -44,14 +51,6 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    private void AmmoChange()
-    {
-        if (AmmoAmount > 0)
-        {
-            AmmoAmount -= 1;
-        }
-
-    }
 
 
 
