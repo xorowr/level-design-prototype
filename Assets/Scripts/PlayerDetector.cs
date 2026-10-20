@@ -9,9 +9,14 @@ public class PlayerDetector : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             AIChase aiChase = enemyAI.GetComponent<AIChase>();
+            RangedEnemyAttack rangedAttack  = enemyAI.GetComponent<RangedEnemyAttack>();
             if (aiChase != null)
             {
                 aiChase.target = other.gameObject;
+            }
+            if (rangedAttack != null)
+            {
+                rangedAttack.target = other.gameObject;
             }
         }
     }
