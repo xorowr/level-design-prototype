@@ -26,7 +26,7 @@ public class UIManager : MonoBehaviour
         if (playerInfo != null)
         {
             HealthDisplay = currentHealth.health;
-            HealthText.text = "Health: " + (HealthDisplay);
+            HealthText.text = "Health: " + (HealthDisplay) + "/100";
         }
 
         if (playerInfo != null)
