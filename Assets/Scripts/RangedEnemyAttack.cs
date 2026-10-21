@@ -41,12 +41,18 @@ public class RangedEnemyAttack : MonoBehaviour
     {
         if (attackCooldown <= 0)
         {
-            Health targetHealth = target.GetComponent<Health>();
-            if (targetHealth != null)
-            {
-                targetHealth.Damage(10);
+                transform.LookAt(target.transform.position);
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, transform.forward, out hit, attackRange))
+                {
+                    Health hitHealth = hit.transform.GetComponent<Health>();
+                    if (hitHealth != null)
+                    {
+                        hitHealth.Damage(10);
+                    }
+
+                }
+                attackCooldown = attackDelay;
             }
-            attackCooldown = attackDelay;
-        }
     }
 }

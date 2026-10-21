@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 1836990992561611433}
   - component: {fileID: 395274715728255278}
   - component: {fileID: 6243863626656495429}
-  - component: {fileID: -8321333243592465412}
+  - component: {fileID: 838261439219044680}
   m_Layer: 0
   m_Name: Ranged Enemy
   m_TagString: Untagged
@@ -269,7 +269,7 @@ MonoBehaviour:
   rEnemy: {fileID: 1836990992561611433}
   range: 10
   CentrePoint: {fileID: 0}
---- !u!114 &-8321333243592465412
+--- !u!114 &838261439219044680
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -278,9 +278,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8579473381031040667}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dcf77326b137e749a11ae69a7e4e981, type: 3}
+  m_Script: {fileID: 11500000, guid: 8186e73ca384a5141a128865407c045a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AIChase
+  m_EditorClassIdentifier: Assembly-CSharp::RangedEnemyAttack
   target: {fileID: 0}
   attackRange: 10
   attackDelay: 1
