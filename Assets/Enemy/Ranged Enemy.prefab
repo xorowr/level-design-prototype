@@ -283,4 +283,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RangedEnemyAttack
   target: {fileID: 0}
   attackRange: 10
-  attackDelay: 1
+  attackDelay: 3
