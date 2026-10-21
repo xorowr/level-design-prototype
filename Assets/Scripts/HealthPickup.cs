@@ -24,8 +24,12 @@ public class HealthPickup : MonoBehaviour
         {
             if (changeHealth.GetComponent<Health>().health < 100)
             {
-                changeHealth.GetComponent<Health>().health += 20;
-                Destroy(gameObject);
+                    changeHealth.GetComponent<Health>().health += 20;
+                if (changeHealth.GetComponent<Health>().health > 100)
+                {
+                    changeHealth.GetComponent<Health>().health = 100;
+                }
+                    Destroy(gameObject);
             }
 
 
